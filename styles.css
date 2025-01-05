@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.hero
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #eff4fd;
+
+}
+nav
+{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+nav ul li a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+nav ul li a:hover
+{
+   color: red; 
+}
+.detel
+{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+.detel h1
+{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+.logo
+{
+    margin-top: 50px;
+    
+    width: 150px;
+    height: 150px;
+}
+span
+{
+    color:orange;
+}
+.detel p
+{
+    color: #555;
+    line-height: 22px;
+
+}
+.detel a
+{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+
+}
+.images
+{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+
+
+}
+.images img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0; 
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s; 
+}
+
+.images:hover .shape {
+    bottom: 40px; 
+}
+
+.images:hover .kasun {
+    
+    left: 45%; 
+    
+}
+.paragraph
+{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+.paragraph h1
+{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+.paragraph p
+{
+    color: #000000;
+    font-size: 25px;
+    line-height: 25px;
+
+}
+.pic {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 35%;                        /* Centers the image vertically */
+    right: 10%;                        /* Moves the image to the right */
+    transform: translateY(-50%);      /* Adjusts for the image height to keep it perfectly centered */
+}
+/* Slider styling */
+.slider {
+    width: 25%; /* Slider width */
+    height: 200px; /* Set height */
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto; /* Centers the slider horizontally */
+    border: 5px solid #333; /* Frame around the entire slider */
+    border-radius: 10px; /* Optional: Adds rounded corners to the frame */
+    position: absolute; /* Position relative to the parent */
+    right: 100px; /* Move the slider to the right */
+}
+
+.slides {
+    width: 400%; /* 4 images, so 400% width */
+    height: 100%;
+    display: flex;
+    animation: slideAnimation 30s infinite;
+}
+
+.slide {
+    width: 25%; /* Display 4 images, so each will be 25% width */
+    height: 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Preserve the full image without cropping */
+    border: 3px solid #fff; /* White border around each image */
+    border-radius: 8px; /* Optional: Adds rounded corners to each image */
+}
+
+/* Keyframes to animate the slider */
+@keyframes slideAnimation {
+    0% { margin-left: 0%; }
+    25% { margin-left: -100%; }
+    50% { margin-left: -200%; }
+    75% { margin-left: -300%; }
+    100% { margin-left: 0%; }
+}
+
+.profile1
+{
+    margin-left: 8%;
+    margin-top: 2%;
+}
+.profile1 h1
+{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+    
+}
+form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, textarea {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="text"], input[type="email"] {
+    height: 40px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    box-sizing: border-box;
+}
+.contact
+{
+    margin-left: 8%;
+    margin-top: 5%;
+}
+.contact h1
+{
+    font-size: 30px;
+    color: #212121;
+    margin-bottom: 20px;
+    
+}
+.social-icons {
+    display: flex; /* Align items in a row */
+    justify-content:last baseline; /* Add space between the Instagram and WhatsApp icons */
+    gap: 100px; /* Reduce the gap between the icons */
+    margin-top: 20px;
+}
+
+.image-container, .image-container1, .image-container2, .image-container3 {
+    text-align: center;
+}
+
+.insta-image {
+    width: 100%;
+    max-width: 200px; /* Set the maximum width for Instagram image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.wp-image {
+    width: 100%;
+    max-width: 100px; /* Resize the WhatsApp image */
+    height: auto; /* Maintain aspect ratio */
+}
+.gt-image {
+    width: 100%;
+    max-width: 100px; /* Resize the WhatsApp image */
+    height: auto; /* Maintain aspect ratio */
+}
+.fb-image {
+    width: 100%;
+    max-width: 200px; /* Set the maximum width for Instagram image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.image-label, .image-label1, .image-label2, .image-label3 {
+    font-size: 16px; /* Set the font size */
+    color: #333; /* Set the label color */
+    margin-top: 10px; /* Space between the image and the label */
+    font-weight: bold; /* Optional: Make the label bold */
+}
+
+
